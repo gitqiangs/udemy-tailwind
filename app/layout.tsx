@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import Script from "next/script"
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -14,9 +16,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
+  return (<>
+
     <html lang="en">
+      <Script type="text/javascript" src="assets/fontawesome/js/fontawesome.min.js"></Script>
+      <Script type="text/javascript" src="assets/fontawesome/js/solid.min.js"></Script>
       <body className={inter.className}>{children}</body>
     </html>
+    </>
   );
 }

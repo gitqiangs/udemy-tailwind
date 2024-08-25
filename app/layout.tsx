@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <Script type="text/javascript" src="assets/fontawesome/js/fontawesome.min.js"></Script>
       <Script type="text/javascript" src="assets/fontawesome/js/solid.min.js"></Script>
+
       <body className={inter.className}>{children}</body>
     </html>
     </>

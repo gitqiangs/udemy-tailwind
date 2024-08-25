@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
     },
   },
-  plugins: [],
+  plugins: [require("./plugins/openVariant")],
 };
+
 export default config;

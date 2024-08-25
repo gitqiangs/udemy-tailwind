@@ -1,17 +1,28 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Logo from "../public/assets/images/logo-inverted.png";
+import Navmobile from "./navmobile"
+import { useEffect } from "react";
 
 const navbar = () => {
+
+
   return (
     <nav className="flex sticky top-0 bg-gradient-to-r from-rose-500 to-pink-500">
       <div className="flex items-center gap-2 p-2">
-        <Image src={Logo} alt="logo image" className="w-14 h-12"></Image>
+        <Image
+          src={Logo}
+          alt="logo image"
+          className="w-14 h-12"
+          priority
+        ></Image>
         <div className="text-2xl font-bold">
           Tw:<span className="text-sky-900">To</span>
         </div>
       </div>
-      <div className="flex flex-1 items-center justify-end">
+      <Navmobile />
+      <div className="md:flex hidden flex-1 items-center justify-end">
         <div className="menu-item">
           <span>Home</span>
         </div>

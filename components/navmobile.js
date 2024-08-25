@@ -6,7 +6,7 @@ const navmobile = () => {
   const contentClassname = isOpen ? "group peer open" : "group peer";
 
   const [isSubOpen, setIsSubOpen] = useState(false);
-  const classes = "group relative h-full cursor-pointer text-center p-4 text-pink-200 transition-colors hover:text-zinc-200"
+  const classes = "group relative h-full cursor-pointer text-center p-4 text-pink-200 transition-colors hover:text-zinc-200 "
   const subcontentClassname = isSubOpen ? classes + "peer open" : classes+  "peer";
 
   return (

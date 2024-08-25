@@ -9,7 +9,7 @@ const navbar = () => {
 
 
   return (
-    <nav className="flex sticky top-0 bg-gradient-to-r from-rose-500 to-pink-500">
+    <nav className="flex sticky top-0 bg-gradient-to-r from-rose-500 to-pink-500 z-50">
       <div className="flex items-center gap-2 p-2">
         <Image
           src={Logo}
